@@ -70,7 +70,7 @@ public class Zoo {
     }
 
     public void setName(String name) {
-        if (name != null && !name.trim().isEmpty()) {  // Validation pour un nom de zoo non vide
+        if (name != null && !name.isEmpty()) {  // Validation pour un nom de zoo non vide
             this.name = name;
         } else {
             System.out.println("Le nom du zoo ne peut pas être vide.");

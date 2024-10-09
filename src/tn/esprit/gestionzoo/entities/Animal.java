@@ -38,7 +38,7 @@ public class Animal {
     }
 
     public void setName(String name) {
-        if (name != null && !name.trim().isEmpty()) {  // Validation pour un nom non vide
+        if (name != null && !name.isEmpty()) {  // Validation pour un nom non vide
             this.name = name;
         } else {
             System.out.println("Le nom d'un animal ne peut pas être vide.");
