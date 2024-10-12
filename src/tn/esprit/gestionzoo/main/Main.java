@@ -1,10 +1,9 @@
 package tn.esprit.gestionzoo.main;
-import tn.esprit.gestionzoo.entities.Animal;
-import tn.esprit.gestionzoo.entities.Zoo;
+import tn.esprit.gestionzoo.entities.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Création de l'objet tn.esprit.gestionzoo.entities.Animal (lion)
+     /*   // Création de l'objet tn.esprit.gestionzoo.entities.Animal (lion)
         Animal lion = new Animal("Mufasa", "Lion", 6, true);
         Animal tiger = new Animal("Shere Khan", "Tigre", 5, true);
         Animal elephant = new Animal("Baloo", "Éléphant", 10, false);
@@ -44,5 +43,27 @@ public class Main {
 
 
         System.out.println(myZoo);                // Appel implicite à toString()
+    */
+        Animal animal = new Animal("Mufasa", "Lion", 6, true);
+        Aquatic aquatic = new Aquatic("Poisson", "Thon", 2, false, "Océan");
+        Terrestrial terrestrial = new Terrestrial("Reptile", "Tortue", 100, false, 4);
+        Dolphin dolphin = new Dolphin("Cétacé", "Dauphin", 8, true, "Mer", 40.5f);
+        Penguin penguin = new Penguin("Oiseau", "Pingouin", 3, true, "Antarctique", 15.3f);
+
+        System.out.println(animal);
+        System.out.println(aquatic);
+        System.out.println(terrestrial);
+        System.out.println(dolphin);
+        System.out.println(penguin);
+
+        aquatic.swim();
+        dolphin.swim();
+        penguin.swim();
+
     }
+
+
+
+
+
 }

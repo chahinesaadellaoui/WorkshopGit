@@ -13,6 +13,7 @@ public class Animal {
         this.setAge(age);  // Validation de l'âge à l'intérieur du setter
         this.isMammal = isMammal;
     }
+    public Animal() {}
 
     public void displayAnimal() {
         System.out.println("Famille: " + family + ", Nom: " + name + ", Âge: " + age + ", est un mammifère: " + isMammal);
@@ -64,4 +65,5 @@ public class Animal {
     public void setMammal(boolean mammal) {
         isMammal = mammal;
     }
+
 }
