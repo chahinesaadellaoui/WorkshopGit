@@ -11,12 +11,19 @@ public class Penguin extends Aquatic {
 
     }
     public Penguin() {
+
         super();
     }
 
     @Override
     public String toString() {
         return super.toString()+"Penguin{" + "swimmingDepth=" + swimmingDepth + '}';
+    }
+
+    @Override
+    public void swim(){
+
+        System.out.println("This pinguin is swimming");
     }
 }
 
