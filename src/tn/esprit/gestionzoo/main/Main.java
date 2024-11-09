@@ -44,7 +44,7 @@ public class Main {
 
         System.out.println(myZoo);                // Appel implicite à toString()
     */
-        Zoo myZoo = new Zoo("Belvidaire", "Tunis");
+
 
 
         /*Aquatic aquatic = new Aquatic("Poisson", "Thon", 2, false, "Océan");
@@ -55,7 +55,7 @@ public class Main {
         Penguin penguin2 = new Penguin("Oiseau", "Pingouin de Humboldt", 2, true, "Amérique du Sud", 10.0f);
 
 
-          System.out.println(aquatic);
+        System.out.println(aquatic);
         System.out.println(terrestrial);
         System.out.println(dolphin1);
         System.out.println(dolphin2);
@@ -88,7 +88,7 @@ public class Main {
         System.out.println("Les deux dophins sont-ils identiques ?: " + dolphinEqual);*/
 
 
-        try {
+       /* try {
             // Ajout d'animaux avec gestion des exceptions
             Animal lion = new Animal("Mufasa", "Lion", 6, true);
             myZoo.addAnimal(lion);
@@ -108,8 +108,36 @@ public class Main {
             System.out.println(e.getMessage());
         } catch (InvalidAgeException e) {
             System.out.println(e.getMessage());
+        }*/
+
+        Zoo myZoo = new Zoo("Belvidaire", "Tunis");
+
+        try {
+            // Création des objets
+            Aquatic shark = new Aquatic("Poisson", "Requin", 5, false, "Océan") {
+                @Override
+                public void swim() {
+                    System.out.println(getName() + " nage rapidement dans l'eau.");
+                }
+            };
+            Penguin penguin = new Penguin("Oiseau", "Pingouin Empereur", 3, true, "Antarctique", 15.3f);
+
+            Terrestrial bear = new Terrestrial("Mammifère", "Ours", 7, true, 4);
+
+            // Tests des méthodes alimentaires
+            shark.eatMeat(Food.MEAT);   // Le requin devrait manger de la viande
+            bear.eatMeat(Food.MEAT);    // L'ours peut manger de la viande
+            bear.eatPlant(Food.PLANT);  // L'ours peut manger des plantes
+            bear.eatPlantAndMeat(Food.BOTH);  // L'ours peut manger les deux
+            penguin.eatMeat(Food.MEAT); // Le pingouin mange de la viande car il est carnivore
+
+        } catch (InvalidAgeException e) {
+            System.out.println(e.getMessage());
         }
 
+
     }
+
+
 }
 
