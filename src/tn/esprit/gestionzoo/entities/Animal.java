@@ -1,5 +1,7 @@
 package tn.esprit.gestionzoo.entities;
 
+import tn.esprit.gestionzoo.exceptions.*;
+
 public class Animal {
     private String family;
     private String name;
@@ -7,7 +9,7 @@ public class Animal {
     private boolean isMammal;
 
     // Constructeur
-    public Animal(String family, String name, int age, boolean isMammal) {
+    public Animal(String family, String name, int age, boolean isMammal) throws InvalidAgeException {
         this.setFamily(family);
         this.setName(name);
         this.setAge(age);  // Validation de l'âge à l'intérieur du setter
@@ -47,16 +49,17 @@ public class Animal {
     }
 
     public int getAge() {
+
         return age;
     }
 
-    public void setAge(int age) {
-        if (age >= 0) {  // Validation pour éviter les âges négatifs
-            this.age = age;
-        } else {
-            System.out.println("L'âge d'un animal ne peut pas être négatif.");
+    public void setAge(int age) throws InvalidAgeException {
+        if (age < 0) {
+            throw new InvalidAgeException("L'âge d'un animal ne peut pas être négatif.");
         }
+        this.age = age;
     }
+
 
     public boolean isMammal() {
         return isMammal;

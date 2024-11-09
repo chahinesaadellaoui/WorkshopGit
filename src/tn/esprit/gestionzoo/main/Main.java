@@ -1,5 +1,6 @@
 package tn.esprit.gestionzoo.main;
 import tn.esprit.gestionzoo.entities.*;
+import tn.esprit.gestionzoo.exceptions.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,8 +47,7 @@ public class Main {
         Zoo myZoo = new Zoo("Belvidaire", "Tunis");
 
 
-        Animal animal = new Animal("Mufasa", "Lion", 6, true);
-       /* Aquatic aquatic = new Aquatic("Poisson", "Thon", 2, false, "Océan");*/
+        /*Aquatic aquatic = new Aquatic("Poisson", "Thon", 2, false, "Océan");
         Terrestrial terrestrial = new Terrestrial("Reptile", "Tortue", 100, false, 4);
         Dolphin dolphin1 = new Dolphin("Cétacé", "Dauphin Bleu", 8, true, "Mer Méditerranée", 40.5f);
         Dolphin dolphin2 = new Dolphin("Cétacé", "Dauphin Gris", 5, true, "Océan Atlantique", 30.2f);
@@ -55,8 +55,7 @@ public class Main {
         Penguin penguin2 = new Penguin("Oiseau", "Pingouin de Humboldt", 2, true, "Amérique du Sud", 10.0f);
 
 
-        System.out.println(animal);
-      /*  System.out.println(aquatic);*/
+          System.out.println(aquatic);
         System.out.println(terrestrial);
         System.out.println(dolphin1);
         System.out.println(dolphin2);
@@ -76,7 +75,7 @@ public class Main {
 
 
         float maxDepth = myZoo.maxPenguinSwimmingDepth();
-        System.out.println("La profondeur maximale des pingouins dans le zoo est : " + maxDepth + " mètres.");
+        System.out.println("La profondeur maximale des pingouins dans le zoo est : " + maxDepth + " mètres.");*/
 
 
        /* dolphin1.swim();
@@ -84,13 +83,33 @@ public class Main {
         penguin1.swim();
         penguin2.swim();*/
 
-        Dolphin dolphin3 = new Dolphin("Cétacé", "Dauphin Bleu", 8, true, "Mer Méditerranée", 40.5f);
+       /* Dolphin dolphin3 = new Dolphin("Cétacé", "Dauphin Bleu", 8, true, "Mer Méditerranée", 40.5f);
         boolean dolphinEqual = dolphin1.equals(dolphin3);
-        System.out.println("Les deux dophins sont-ils identiques ?: " + dolphinEqual);
+        System.out.println("Les deux dophins sont-ils identiques ?: " + dolphinEqual);*/
+
+
+        try {
+            // Ajout d'animaux avec gestion des exceptions
+            Animal lion = new Animal("Mufasa", "Lion", 6, true);
+            myZoo.addAnimal(lion);
+            System.out.println("Nombre d'animaux dans le zoo : " + myZoo.getNbrAnimals());
+
+            Animal tiger = new Animal("Félin", "Tigre", -1, true);  // Âge négatif pour tester InvalidAgeException
+            myZoo.addAnimal(tiger);  // Cela lèvera une InvalidAgeException
+
+            Animal elephant = new Animal("Mammifère", "Éléphant", 10, false);
+            myZoo.addAnimal(elephant);
+            System.out.println("Nombre d'animaux dans le zoo : " + myZoo.getNbrAnimals());
+
+            Animal zebra = new Animal("Équidé", "Zèbre", 5, false);
+            myZoo.addAnimal(zebra);  // Cela lèvera une ZooFullException
+
+        } catch (ZooFullException e) {
+            System.out.println(e.getMessage());
+        } catch (InvalidAgeException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
-
-
-
-
-
 }
+
