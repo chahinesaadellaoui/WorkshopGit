@@ -1,6 +1,8 @@
 # WorkshopGit
 Zoo Management Project
-This project is a Java-based simulation for managing zoos. It implements object-oriented programming concepts, custom exception handling, polymorphism, interfaces, and enumerations as outlined in Prosits 2 to 8.
+
+This project is a Java-based simulation for managing zoos. It implements object-oriented programming concepts, custom exception handling, polymorphism, interfaces, 
+and enumerations as outlined in Prosits 2 to 8.
 
 Available Scripts
 In the project directory, you can run:
@@ -9,11 +11,13 @@ Tests
 Manually test the following features:
 
 Adding, searching, and removing animals in a zoo.
+
 Validating custom exceptions:
 ZooFullException
 InvalidAgeException
 DuplicateAnimalException
 Build
+
 Since this is a pure Java project, there is no complex build process like in React or Node.js projects. The javac compilation step is sufficient.
 
 Features
@@ -37,18 +41,22 @@ Each Prosit contains specific instructions that contributed to the development o
 
 Prosit 2: Basic structure of Animal and Zoo classes, constructors, and displayZoo() method. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit2
 
-
 Prosit 3: Adding, searching, and removing animals; handling duplicates and full zoo capacity. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit3
 
-
 Prosit 4: Encapsulation, validation, and code organization into packages.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit4
+
 Prosit 5: Introduction of Aquatic and Terrestrial subclasses, polymorphism with swim() method.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit5
+
 Prosit 6: Advanced features such as managing aquatic animals and calculating maximum swimming depth.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit6
+
 Prosit 7: Custom exception handling (ZooFullException, InvalidAgeException).https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit7
+
 Prosit 8: Dietary behaviors using interfaces and enumerations.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit8
 
 Learn More
+
 Java Development
+
 To learn Java, refer to the official documentation: Java Documentation.
 
 Core Concepts Used
