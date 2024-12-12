@@ -1,6 +1,6 @@
 # WorkshopGit
 Zoo Management Project
-This project is a Java-based simulation for managing zoos. It implements object-oriented programming concepts, custom exception handling, polymorphism, interfaces, and enumerations as outlined in Prosits 2 to 9.
+This project is a Java-based simulation for managing zoos. It implements object-oriented programming concepts, custom exception handling, polymorphism, interfaces, and enumerations as outlined in Prosits 2 to 8.
 
 Available Scripts
 In the project directory, you can run:
@@ -35,13 +35,17 @@ src/tn/esprit/gestionzoo/main: Contains the Main class to execute the applicatio
 Links to Prosits
 Each Prosit contains specific instructions that contributed to the development of this project. Explore the corresponding branch for each:
 
-Prosit 2: Basic structure of Animal and Zoo classes, constructors, and displayZoo() method.
-Prosit 3: Adding, searching, and removing animals; handling duplicates and full zoo capacity.
-Prosit 4: Encapsulation, validation, and code organization into packages.
-Prosit 5: Introduction of Aquatic and Terrestrial subclasses, polymorphism with swim() method.
-Prosit 6: Advanced features such as managing aquatic animals and calculating maximum swimming depth.
-Prosit 7: Custom exception handling (ZooFullException, InvalidAgeException).
-Prosit 8: Dietary behaviors using interfaces and enumerations.
+Prosit 2: Basic structure of Animal and Zoo classes, constructors, and displayZoo() method. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit2
+
+
+Prosit 3: Adding, searching, and removing animals; handling duplicates and full zoo capacity. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit3
+
+
+Prosit 4: Encapsulation, validation, and code organization into packages.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit4
+Prosit 5: Introduction of Aquatic and Terrestrial subclasses, polymorphism with swim() method.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit5
+Prosit 6: Advanced features such as managing aquatic animals and calculating maximum swimming depth.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit6
+Prosit 7: Custom exception handling (ZooFullException, InvalidAgeException).https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit7
+Prosit 8: Dietary behaviors using interfaces and enumerations.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit8
 
 Learn More
 Java Development
@@ -53,6 +57,7 @@ Interfaces: Implemented through Carnivore, Herbivore, and Omnivore.
 Exception Handling: Custom exceptions manage validation and error handling.
 Troubleshooting
 Common Issues
+
 Compilation Errors
 Error: unreported exception InvalidAgeException
 Ensure that any constructors or methods that throw InvalidAgeException are wrapped in a try-catch block.
