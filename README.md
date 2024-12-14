@@ -1,113 +1,121 @@
-# WorkshopGit
-Zoo Management Project
+# **WorkshopGit**  
+## **Zoo Management Project**  
 
-This project is a Java-based simulation for managing zoos. It implements object-oriented programming concepts, custom exception handling, polymorphism, interfaces, 
-and enumerations as outlined in Prosits 2 to 8.
+Ce projet est une simulation basée sur **Java** pour la gestion des zoos. Il implémente les concepts suivants : **programmation orientée objet**, gestion des exceptions personnalisées, polymorphisme, interfaces et énumérations comme spécifié dans les **Prosits 2 à 8**.
 
-Available Scripts
-In the project directory, you can run:
+---
 
-Tests
-Manually test the following features:
+## **Scripts Disponibles**  
 
-Adding, searching, and removing animals in a zoo.
+Dans le répertoire du projet, vous pouvez exécuter :  
 
-Validating custom exceptions:
-ZooFullException
+### **Tests**  
+Testez manuellement les fonctionnalités suivantes :  
+- Ajout, recherche et suppression d'animaux dans un zoo.  
+- Validation des exceptions personnalisées :  
+  - `ZooFullException`  
+  - `InvalidAgeException`  
+  - `DuplicateAnimalException`  
 
-InvalidAgeException
+---
 
-DuplicateAnimalException
+### **Compilation (Build)**  
+Étant donné qu'il s'agit d'un projet **Java pur**, il n'y a pas de processus de build complexe comme dans les projets **React** ou **Node.js**. La simple étape de compilation avec `javac` est suffisante.  
 
-Build
+---
 
-Since this is a pure Java project, there is no complex build process like in React or Node.js projects. The javac compilation step is sufficient.
+## **Fonctionnalités**  
 
-Features
-Animal and Zoo Management
+### **Gestion des Animaux et du Zoo**  
+- Ajouter, supprimer et rechercher des animaux dans un zoo.  
+- Comparer deux zoos pour déterminer lequel a le plus d'animaux.  
 
-Add, remove, and search for animals in a zoo.
+### **Exceptions Personnalisées**  
+- **`ZooFullException`** : Levée lorsque le zoo dépasse sa capacité maximale.  
+- **`InvalidAgeException`** : Levée lorsqu'un animal est créé avec un âge négatif.  
+- **`DuplicateAnimalException`** : Levée lorsqu'un animal avec le même nom est ajouté deux fois.  
 
-Compare two zoos to determine which has more animals.
+### **Comportements Spécialisés**  
+- Les animaux aquatiques peuvent nager (méthode `swim()`).  
+- Les comportements alimentaires sont définis via des interfaces (**Carnivore**, **Herbivore**, **Omnivore**).  
+- Des classes spécifiques comme **Dolphin** et **Penguin** démontrent le polymorphisme.  
 
-Custom Exceptions
+---
 
-ZooFullException: Raised when the zoo exceeds its maximum capacity.
+## **Structure du Projet**  
 
-InvalidAgeException: Raised when an animal is created with a negative age.
+- **src/tn/esprit/gestionzoo/entities** : Contient les classes entité (Animal, Zoo, Aquatic, Terrestrial, etc.).  
+- **src/tn/esprit/gestionzoo/exceptions** : Contient les classes d'exceptions personnalisées.  
+- **src/tn/esprit/gestionzoo/main** : Contient la classe **Main** pour exécuter l'application.  
 
-DuplicateAnimalException: Raised when an animal with the same name is added twice.
+---
 
-Specialized Behaviors
+## **Liens vers les Prosits**  
 
-Aquatic animals can swim (swim() method).
+Chaque **Prosit** contient des instructions spécifiques ayant contribué au développement de ce projet. Consultez la branche correspondante pour chaque :  
 
-Dietary behaviors are defined via interfaces (Carnivore, Herbivore, Omnivore).
+- **Prosit 2** : Structure de base des classes **Animal** et **Zoo**, constructeurs et méthode `displayZoo()`.  
+  [Lien Prosit 2](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit2)  
 
-Specific classes like Dolphin and Penguin demonstrate polymorphism.
+- **Prosit 3** : Ajout, recherche et suppression des animaux ; gestion des doublons et capacité maximale du zoo.  
+  [Lien Prosit 3](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit3)  
 
-Project Structure
+- **Prosit 4** : Encapsulation, validation et organisation du code en packages.  
+  [Lien Prosit 4](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit4)  
 
-src/tn/esprit/gestionzoo/entities: Contains entity classes (Animal, Zoo, Aquatic, Terrestrial, etc.).
+- **Prosit 5** : Introduction des sous-classes **Aquatic** et **Terrestrial**, polymorphisme avec la méthode `swim()`.  
+  [Lien Prosit 5](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit5)  
 
-src/tn/esprit/gestionzoo/exceptions: Contains custom exception classes.
+- **Prosit 6** : Fonctionnalités avancées, gestion des animaux aquatiques et calcul de la profondeur maximale.  
+  [Lien Prosit 6](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit6)  
 
-src/tn/esprit/gestionzoo/main: Contains the Main class to execute the application.
+- **Prosit 7** : Gestion des exceptions personnalisées (**ZooFullException**, **InvalidAgeException**).  
+  [Lien Prosit 7](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit7)  
 
-Links to Prosits
+- **Prosit 8** : Comportements alimentaires via les **interfaces** et les **énumérations**.  
+  [Lien Prosit 8](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit8)  
 
-Each Prosit contains specific instructions that contributed to the development of this project. Explore the corresponding branch for each:
+---
 
-Prosit 2: Basic structure of Animal and Zoo classes, constructors, and displayZoo() method. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit2
+## **En savoir plus**  
 
-Prosit 3: Adding, searching, and removing animals; handling duplicates and full zoo capacity. https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit3
+### **Développement Java**  
+Pour apprendre **Java**, consultez la [documentation officielle Java](https://docs.oracle.com/javase/tutorial/).  
 
-Prosit 4: Encapsulation, validation, and code organization into packages.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit4
+---
 
-Prosit 5: Introduction of Aquatic and Terrestrial subclasses, polymorphism with swim() method.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit5
+## **Concepts Clés Utilisés**  
 
-Prosit 6: Advanced features such as managing aquatic animals and calculating maximum swimming depth.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit6
+- **Polymorphisme** : Illustré par la méthode `swim()` et les interfaces alimentaires.  
+- **Interfaces** : Implémentées via **Carnivore**, **Herbivore** et **Omnivore**.  
+- **Gestion des Exceptions** : Les exceptions personnalisées assurent la validation et la gestion des erreurs.  
 
-Prosit 7: Custom exception handling (ZooFullException, InvalidAgeException).https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit7
+---
 
-Prosit 8: Dietary behaviors using interfaces and enumerations.https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit8
+## **Dépannage**  
 
-Learn More
+### **Problèmes Courants**  
 
-Java Development
+#### **Erreurs de Compilation**  
 
-To learn Java, refer to the official documentation: Java Documentation.
+- **Erreur : unreported exception InvalidAgeException**  
+  Assurez-vous que tous les constructeurs ou méthodes lançant `InvalidAgeException` sont enveloppés dans un **try-catch**.  
 
-Core Concepts Used
+- **Erreur : cannot find symbol**  
+  Vérifiez les noms de classes et les chemins des fichiers. Utilisez la commande **javac** appropriée pour compiler les fichiers dans leurs répertoires respectifs.  
 
-Polymorphism: Demonstrated with the swim() method and dietary interfaces.
+---
 
-Interfaces: Implemented through Carnivore, Herbivore, and Omnivore.
+## **Déploiement**  
+Ce projet est conçu pour fonctionner localement sur la **Java Virtual Machine (JVM)**. Aucun déploiement n'est requis.  
+Pour exécuter sur un serveur, assurez-vous que le serveur dispose d'une **JVM compatible** installée.  
 
-Exception Handling: Custom exceptions manage validation and error handling.
+---
 
-Troubleshooting
+## **Auteur**  
+**Chahine Saadellaoui** : Diplômé en science informatique  
 
-Common Issues
+---
 
-Compilation Errors
-
-Error: unreported exception InvalidAgeException
-
-Ensure that any constructors or methods that throw InvalidAgeException are wrapped in a try-catch block.
-
-Error: cannot find symbol
-
-Verify that class names and file paths are correct. Use the proper javac command to compile files in their respective directories.
-
-Deployment
-
-This project is designed to run locally using the Java Virtual Machine (JVM). No deployment is required. To run on a server, ensure the server has a compatible JVM installed.
-
-Author
-
-Chahine Saadellaoui: A computer science graduate 
-
-License
-
-This project is open source and can be freely modified and redistributed.
+## **Licence**  
+Ce projet est open source et peut être librement modifié et redistribué.  
