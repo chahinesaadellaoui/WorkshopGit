@@ -99,4 +99,3 @@ Ce projet est open source et peut être librement modifié et redistribué.
 
 ---
 
-Si vous souhaitez d'autres modifications ou sections, faites-le-moi savoir !
