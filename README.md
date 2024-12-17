@@ -52,7 +52,10 @@ Testez manuellement les fonctionnalités suivantes :
 
 ## **Liens vers les Prosits**  
 
-Chaque **Prosit** contient des instructions spécifiques ayant contribué au développement de ce projet. Consultez la branche correspondante pour chaque :  
+Chaque **Prosit** contient des instructions spécifiques ayant contribué au développement de ce projet. Consultez la branche correspondante pour chaque : 
+
+ - **Prosit 1** : Structure de base du projet Zoo Management, y compris les premières configurations et l'initialisation des classes Animal et Zoo.
+  [Lien Prosit 1](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit1)  
 
 - **Prosit 2** : Structure de base des classes **Animal** et **Zoo**, constructeurs et méthode `displayZoo()`.  
   [Lien Prosit 2](https://github.com/chahinesaadellaoui/WorkshopGit/tree/prosit2)  
