@@ -1,7 +1,7 @@
 # **WorkshopGit**  
 ## **Zoo Management Project**  
 
-Ce projet est une simulation basée sur **Java** pour la gestion des zoos. Il implémente les concepts suivants : **programmation orientée objet**, gestion des exceptions personnalisées, polymorphisme, interfaces et énumérations comme spécifié dans les **Prosits 2 à 8**.
+Ce projet est une simulation basée sur **Java** pour la gestion des zoos. Il implémente les concepts suivants : **programmation orientée objet**, gestion des exceptions personnalisées, polymorphisme, interfaces et énumérations comme spécifié dans les **Prosits 1 à 8**.
 
 ---
 
